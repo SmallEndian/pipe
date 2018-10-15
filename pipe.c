@@ -21,7 +21,7 @@ int main(int argc, char ** argv){
 		return 0;
 	}
 
-	// We replace the fd corresponding to stdin
+	// We replace the fd corresponding to stdout
 	freopen("/tmp/is_pipe_working?", "w", stdout);
 	execl(argv[1], NULL);
 
