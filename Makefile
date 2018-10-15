@@ -1,6 +1,6 @@
 
 
-all: hello
+all: hello pipe
 
 %:%.c
 	gcc -o $@ $<
